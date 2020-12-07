@@ -1,0 +1,87 @@
+
+:root {
+  --blue-dark: #03045eff;
+  --blue-primary: #48cae4ff;
+  --blue-secondary: #0096c7ff;
+  --red-primary:#d62828ff;
+}
+
+.container {
+  margin-top: 4.5rem;
+}
+
+.container .jumbotron {
+  background-color: var(--blue-primary);
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.container .card {
+  padding: 2rem 15rem;
+}
+
+input.form-control {
+  color: var(--blue-dark);
+}
+
+.form-control:focus,
+.form-control:active {
+  outline: 0px;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+}
+
+.input-group-btn button {
+  background-color: var(--blue-primary);
+  color: #fff;
+}
+
+.input-group-btn button:hover {
+  background-color: var(--blue-secondary);
+  color: #fff;
+}
+
+.container .card .card-body {
+  padding: 2rem 0 0 0;
+}
+
+.list-group .wrapper {
+  display: flex;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 5px;
+  padding-right: .5em;
+  margin-bottom: .5rem;
+}
+
+.list-group .wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  flex: auto;
+  color: var(--blue-dark);
+  cursor: pointer;
+  border: none;
+}
+
+.list-group-item.complete {
+  text-decoration: line-through;
+  text-decoration-color: var(--blue-primary);
+  text-decoration-thickness: 2px;
+}
+
+.list-group-item.complete  .fa-check{
+  opacity: 1;
+}
+
+.fa-check {
+  opacity: 0;
+  margin-right: 0.5em;
+  color: var(--blue-primary);
+}
+
+.fa-minus-square {
+  align-self: center;
+  color: var(--red-primary);
+  cursor: pointer;
+}
